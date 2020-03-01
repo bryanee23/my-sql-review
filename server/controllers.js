@@ -1,9 +1,9 @@
-const { readdAll, addItem } = require('../database/models.js');
+const { readAll, addItems } = require('../database/models.js');
 
 
 const controllers = {
   getItems: (req, res) => {
-    readdAll((err) => {
+    readAll((err) => {
       if (err) {
         res.status(400);
       } else {
@@ -14,7 +14,7 @@ const controllers = {
   },
   //called by router
   postItems: (req, res) => {
-    addItem(req.body, (err) => {
+    addItems(req.body, (err) => {
       if (err) {
         res.status(400);
       } else {

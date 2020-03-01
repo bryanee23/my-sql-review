@@ -2,9 +2,9 @@ const mysql = require('mysql');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'chat',
+  user: 'student',
+  password: 'student',
+  database: 'ball',
 })
 
 db.connect((err) => {
@@ -13,7 +13,7 @@ db.connect((err) => {
   } else {
     console.log('connected to server')
   };
-}
+})
 module.exports = db;
 //CREATE DATABASE ball;
 //show database

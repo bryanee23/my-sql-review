@@ -6,7 +6,7 @@ const router = require("./router.js");
 
 const app = express();
 const port = 3434;
-app.listen(port, () => console.log(`:${port} is watching you`));
+app.listen(port, () => console.log(`the ${port} is on!`));
 
 // parsing requests to objects
 app.use(bodyParser.json());
